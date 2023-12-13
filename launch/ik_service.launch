@@ -1,0 +1,5 @@
+<launch>
+    <arg name="start_roscore" default="true" /> 
+    <node name="ik_service" type="ik_service" pkg="ik_service" output="screen"/>
+    <node name="ik_client" type="ik_client" pkg="ik_service" output="screen"/>
+</launch>
