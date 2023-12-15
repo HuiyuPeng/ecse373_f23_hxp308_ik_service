@@ -117,10 +117,10 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES ik_service
-   CATKIN_DEPENDS geometry_msgs message_generation roscpp std_msgs ur_kinematics
-#  DEPENDS system_lib
+#INCLUDE_DIRS include
+#LIBRARIES ik_service
+CATKIN_DEPENDS geometry_msgs message_generation roscpp std_msgs ur_kinematics
+#DEPENDS system_lib
 )
 
 ###########
@@ -214,7 +214,8 @@ target_link_libraries(ik_client ${catkin_LIBRARIES})
 # )
 
 #############
-## Testing ##
+## Testing ##dependencies
+
 #############
 
 ## Add gtest based cpp test target and link libraries

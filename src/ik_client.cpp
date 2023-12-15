@@ -7,6 +7,7 @@
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "ik_client");
+    // Client node
     ros::ServiceClient client = n.serviceClient<ik_service::PoseIK>("pose_ik");
     ros::NodeHandle n;
     ik_service::PoseIK pose_ik;
