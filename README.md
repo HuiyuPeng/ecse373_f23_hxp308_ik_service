@@ -134,3 +134,7 @@ num_sol = ur_kinematics::inverse(&T[0][0], &q_sols[0][0], 0.0);
 ```
 Use the num_sol and q_sols variables to fill out the ik_service::PoseIK::Response res in the ik_service node. In the ik_client node, add to the ROS_INFO() to show ose
 set of joint angles (if there is more than one solution.
+## Test
+file:///home/huiyupeng/.cache/.fr-5gv3l5/Screenshot%202023-12-15%20at%206.06.10%20PM.png
+file:///home/huiyupeng/.cache/.fr-zbvAI2/Screenshot%202023-12-15%20at%206.07.04%20PM.png
+file:///home/huiyupeng/.cache/.fr-NfITo6/Screenshot%202023-12-15%20at%206.07.16%20PM.png
