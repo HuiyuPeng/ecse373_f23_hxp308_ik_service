@@ -36,7 +36,7 @@ int main(int argc, char **argv)
     // Service Node
     ros::ServiceServer service = n.advertiseService("pose_ik", pose_ik);
 
-    ROS_INFO("Ready for requests");
+    ROS_INFO("ik_service_node Ready for requests");
     ros::spin();
 
     return 0;
